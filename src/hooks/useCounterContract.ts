@@ -3,7 +3,8 @@ import Counter from '../contracts/counter';
 import { useTonClient } from './useTonClient';
 import { useAsyncInitialize } from './useAsyncInitialize';
 import { useTonConnect } from './useTonConnect';
-import { Address, OpenedContract } from '@ton/core';
+import { Address } from '@ton/core';
+import type { OpenedContract } from '@ton/core';
 
 export function useCounterContract() {
   const client = useTonClient();
@@ -24,7 +25,7 @@ export function useCounterContract() {
     let isActive = true;
 
     async function getValue() {
-      if (!isActive) return;
+      if (!isActive || !counterContract) return;
       setVal(null);
       const val = await counterContract.getCounter();
       if (isActive) {

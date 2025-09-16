@@ -1,5 +1,5 @@
 import { useTonConnectUI } from '@tonconnect/ui-react';
-import { Sender, SenderArguments } from '@ton/core';
+import type { Sender, SenderArguments } from '@ton/core';
 import { useEffect } from 'react';
 
 export function useTonConnect(): { sender: Sender; connected: boolean } {
