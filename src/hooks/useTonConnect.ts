@@ -11,8 +11,8 @@ export function useTonConnect(): { sender: Sender; connected: boolean } {
         includeWallets: [
           {
             appName: "stower",
-            universalLink: "https://bridge.dev.delightlabs.team/bridge",
-            bridgeUrl: "https://bridge.dev.delightlabs.team/bridge",
+            universalLink: "https://bridge.stower.money/bridge",
+            bridgeUrl: "https://bridge.stower.money/bridge",
             aboutUrl: "https://tonkeeper.com",
             imageUrl: "https://tonkeeper.com/assets/tonconnect-icon.png",
             name: "STOWER",
