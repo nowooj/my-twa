@@ -11,16 +11,18 @@ export function useTonConnect(): { sender: Sender; connected: boolean } {
         includeWallets: [
           {
             appName: "stower",
-            universalLink: "https://bridge.stower.money/bridge",
-            bridgeUrl: "https://bridge.stower.money/bridge",
-            aboutUrl: "https://tonkeeper.com",
-            imageUrl: "https://tonkeeper.com/assets/tonconnect-icon.png",
             name: "STOWER",
-            platforms: ["ios", "android", "chrome", "firefox", "safari", "windows", "macos", "linux"],
+            imageUrl: "https://assets.stower.money/STOWER-logo_288x288.png",
+            aboutUrl: "https://stower.money",
+            universalLink: "https://bridge.stower.money/bridge",
+            deepLink: "stower-tc://",
+            bridgeUrl: "https://bridge.stower.money/bridge",
+            platforms: ["ios", "android"],
             features: [
               {
                 name: "SendTransaction",
-                maxMessages: 4,
+                maxMessages: 255,
+                extraCurrencySupported: false
               }
             ]
           }
