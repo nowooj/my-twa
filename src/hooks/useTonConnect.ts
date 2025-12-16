@@ -14,9 +14,9 @@ export function useTonConnect(): { sender: Sender; connected: boolean } {
             name: "STOWER",
             imageUrl: "https://assets.stower.money/STOWER-logo_288x288.png",
             aboutUrl: "https://stower.money",
-            universalLink: "https://bridge.stower.money/bridge",
+            universalLink: "https://connect.stower.money",
             deepLink: "stower-tc://",
-            bridgeUrl: "https://bridge.stower.money/bridge",
+            bridgeUrl: "https://bridge.dev.delightlabs.team/bridge",
             platforms: ["ios", "android"],
             features: [
               {
