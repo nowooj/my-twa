@@ -16,7 +16,7 @@ export function useTonConnect(): { sender: Sender; connected: boolean } {
             aboutUrl: "https://stower.money",
             universalLink: "https://connect.stower.money",
             deepLink: "stower-tc://",
-            bridgeUrl: "https://bridge.dev.delightlabs.team/bridge",
+            bridgeUrl: "https://bridge.stower.money/bridge",
             platforms: ["ios", "android"],
             features: [
               {
@@ -27,7 +27,7 @@ export function useTonConnect(): { sender: Sender; connected: boolean } {
             ]
           }
         ]
-      }
+      },            
     });
   }, [setOptions]);
   
